@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+  <li th:each="todo:${listTodo}">
+    <span th:text="${todo.getTitle()}"></span>: <span th:text="${todo.getDetail()}"></span>
+
+  </li>
+</ul>
+</body>
+</html>
